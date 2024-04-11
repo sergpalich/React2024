@@ -82,11 +82,12 @@
 
 .left-col {
     background-color: burlywood;
-    width: 60%;
+    width: 70%;
     display: flex;
     /* justify-content: space-between; */
     flex-wrap: wrap;
-    justify-items:auto;
+    justify-items:right;
+    align-items: right;
 
 }
 
@@ -100,7 +101,7 @@
 
 .article {
     background-color: blue;
-    margin: 10px;
+    /* margin: 10px; */
     height: 3rem;
     align-content: center;
     width: 40%;
@@ -120,4 +121,11 @@
 .publicidad {
     background-color: blueviolet;
     width: 80%;
+}
+
+
+.extern_box.tercero div {
+    background-color: yellow;
+    text-align: center;
+    height: 2rem;
 }
