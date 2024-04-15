@@ -2,47 +2,50 @@
     margin: 10px;
     padding: 0;
     box-sizing: border-box;
+    font-size: 30px;
 }
 
-
+/* Primer div-box de tres */
 .extern_box {
     background-color: black;
     max-width: 1200px;
-   /*  min-height: 300px; */
     padding: 5px;
     display: flex;
     flex-direction: column;
 }
 
 
-
+/* Primer contenedor con log, nav y social */
 .flex-container {
     margin: 20px;
-   /*  width: 100%; */
     display: flex;
     background-color: grey;
-    
     justify-content: space-evenly;
     
 }
 
+/* Contenedores internos dentro de primer contenedor */
 .flex-container div {
     background-color: red;
     display: flex;
     line-height: 75px;
     text-align: center;
     margin: 10px;
-    /* flex: auto; */
-    font-size: 30px;
+    
 }
 
-
+/* A los contenedores dentro de div establesemos differentes proprciones con grow */
 .box {
     display: flex;
     flex-basis: 100px;
     flex-grow: 1;
     
     
+}
+
+.first:hover{
+    scale: 1.5;
+    background-color: blue;
 }
 
 .box:nth-child(2) {
@@ -54,7 +57,6 @@
 
 .box.box.banner {
     background-color: yellow;
-   /*  width: 100%; */
 }
 
 .flex-container.banner {
@@ -64,18 +66,13 @@
 .extern_box.segundo {
     background-color: black;
     display: flex;
-    flex-direction: row;
-    
-    
-    /* padding: 10px; */
-    /* align-items: stretch; */
-   
+    flex-direction: row; 
     
 
 }
 
-
-@media (width < 650px) {
+/* Establecemos cambios con de tamaño de pantalla a tablet */
+@media (width < 767px) {
     .extern_box .flex-container  {
         flex-direction: column;
     }
@@ -84,10 +81,11 @@
     }
 } 
 
-@media (width < 650px) {
+@media (width < 767px) {
     .extern_box.segundo {
         flex-direction: column;
         justify-content: space-evenly;
+        flex-wrap: nowrap;
         
     }
 
@@ -106,13 +104,14 @@
     background-color: burlywood;
     width: 60%;
     display: flex;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
     justify-items:right;
     align-items: right;
     margin: 20px;
 
 }
+
+/* Cambio de pantalla a mobil */
 
 @media (width < 400px) {
     .extern_box.segundo .left-col {
@@ -122,7 +121,7 @@
         
     }
     * {
-        color: blueviolet;
+        color: brown;
     }
    
 }
@@ -141,14 +140,9 @@
 
 .article {
     background-color: blue;
-    /* margin: 10px; */
     height: 3rem;
     align-content: center;
     width: 40%;
-
-    /* padding: 5px; */
-    
-
 }
 
 .article1 {
@@ -168,4 +162,5 @@
     background-color: yellow;
     text-align: center;
     height: 2rem;
+    margin: 20px;
 }
