@@ -43,8 +43,8 @@
  
 
   <div class="container">
-    <div class="mx-auto row my-5 mx-5">
-      <div class="col">
+    <div class="mx-auto row my-5 mx-5  align-items-center">
+      <div class="bookmark col-md-6 order-last order-md-0">
         <h1>A Simple Bookmark <br> Manager</h1>
         <p>A clean and simple interface to organize
           your favorite websites. Open a new browser tab 
@@ -54,13 +54,40 @@
         <button type="button" class="btn btn-light">Get it on Firefox</button>
         
       </div>
-      <div class="mx-auto col">
-        <img src="../tasca2Bootstrap/Imagenes/illustration-hero.svg" alt="screen image">
+      <div class="mx-auto col-md-6 order-ms-1">
+        <img class="img-fluid"  src="../tasca2Bootstrap/Imagenes/illustration-hero.svg" alt="screen image">
       </div>
     </div>
   </div>
 
+  <div class="container-sm features">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 text-center">
+        <h3 id="featuresLabel"><strong>Features</strong></h3>
+      <p>Our aim is to make it quick and easy 
+        for you to access your favourite websites. Your bookmarks 
+        sync between your devices so you can access them on the go.
+      </p>
+      </div>  
+    </div>
+  </div>
   
+  <ul class="nav nav-tabs flex-column flex-sm-row align-items-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Activo</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Enlace</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Enlace</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled">Deshabilitado</a>
+    </li>
+  </ul>
+
+ 
 
 
 </body>

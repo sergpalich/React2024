@@ -11,9 +11,7 @@ $color-principal: #5265E1;
 $color-secundario: #FA5959;
 $color-texto: green; 
 
-h3 {
-    color: $color-texto;
-}
+
 
 
 h2 {
@@ -39,3 +37,29 @@ h2 {
     color: red;
     background-color: white;
 }
+
+.features {
+    width: 500px;
+    
+}
+
+#featuresLabel {
+    padding-bottom: 1rem;
+}
+
+.bookmark {
+    align-items: center;
+}
+
+@media (width< 768px) {
+    .bookmark {
+        text-align: center;
+    }
+
+    .features {
+        width: auto;
+    }
+}
+
+
+
